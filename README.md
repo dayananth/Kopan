@@ -1,48 +1,42 @@
 # Group Project - *Kopan*
 
-Time spent: **X** hours spent in total
-
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] List page
-   - [ ] Search Bar
-   - [ ] List coupons based on the search category
+- [ ] Login Page
+  - [ ] Provide a capability of the user to login to the app for the first time & persist his login for the further app restarts
+- [ ] Search Page
+  - [ ] Provide a simple view of the coupons available based on his interests chosen
+  - [ ] Provide an infinite list of coupons data on infinite scroll
+  - [ ] Pull to refresh the dataset
 - [ ] Search Filters
-   - [ ] Location
-   - [ ] Categories
-   - [ ] sort by
+   - [ ] Provide a functionality to search by location, categories, sory by
 - [ ] Coupon Details page
-   - [ ] Details
+   - [ ] Provide details of the coupon 
    - [ ] Buying options
 - [ ] Checkout Page
    - [ ] Validate Credit Cards
    - [ ] Place an order
 - [ ] Receipt Page 
-- [ ] Upload a coupon
 - [ ] My Account Page
+  - [ ] Provide a tab as: "My Coupons" listing the coupons bought.
+  - [ ] Provide a settings tab to list the interested categories which upon selection will be used to show results on the search page
 
 The following **optional** features are implemented:
 
-- [ ] 
-
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-Describe any challenges encountered while building the app.
-
+- [ ] Login Page
+  - [ ] If an user forgets his password, provide capability to reset his password
+  - [ ] If an user doesnot have account before, provide a way to create an account
+- [ ] search Page
+  - [ ] Section as Last Viewed Page
+  - [ ] Provide a map view of the coupons available based on the location
+- [ ] Notification
+  - [ ] Provide a notification mechanish for notifying the buyers based on their interests / last seen coupons / expiry
+  - [ ] Provide a notification mechanish for notifying the seller based on their expiry 
+- [ ] My Account Page
+  - [ ] "My Coupons" page should list 2 sections: Coupons bought from Groupon / Coupons bought from our app
+  
 ## License
 
     Copyright [yyyy] [name of copyright owner]
