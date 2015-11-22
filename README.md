@@ -39,7 +39,7 @@ The following **optional** features are implemented:
   
 ## Wireframes;
 
- [a wireframes link]("wireframes/README.md")
+ [wireframes link](wireframes/README.md)
 
 ## License
 
