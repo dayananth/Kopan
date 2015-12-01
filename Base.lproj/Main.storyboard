@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Account View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MyAccountViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="43" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l6l-A1-B8O">
+                                <rect key="frame" x="11" y="74" width="299" height="494"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sectionHeaderCell" rowHeight="43" id="XZG-fp-nYR" customClass="MyAccountHeaderTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="299" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XZG-fp-nYR" id="9pI-nG-iGP">
+                                            <rect key="frame" x="0.0" y="0.0" width="299" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voucher code: X121312" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhK-xt-n8j" userLabel="voucher_code">
+                                                    <rect key="frame" x="8" y="12" width="130.5" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfP-Ke-wSM" userLabel="sell_button">
+                                                    <rect key="frame" x="232" y="8" width="51" height="24"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="51" id="0eV-b4-FQz"/>
+                                                        <constraint firstAttribute="height" constant="24" id="PFK-BG-LRQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="Sell ">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="AfP-Ke-wSM" secondAttribute="trailing" constant="16" id="9rA-9F-u62"/>
+                                                <constraint firstItem="DhK-xt-n8j" firstAttribute="top" secondItem="9pI-nG-iGP" secondAttribute="topMargin" constant="4" id="KVy-Qs-Fze"/>
+                                                <constraint firstItem="AfP-Ke-wSM" firstAttribute="top" secondItem="9pI-nG-iGP" secondAttribute="top" constant="8" id="RWG-Ke-fky"/>
+                                                <constraint firstItem="AfP-Ke-wSM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DhK-xt-n8j" secondAttribute="trailing" constant="5" id="lUe-jg-7Rz"/>
+                                                <constraint firstItem="DhK-xt-n8j" firstAttribute="leading" secondItem="9pI-nG-iGP" secondAttribute="leadingMargin" id="ua3-LX-qQA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="voucher_title" destination="DhK-xt-n8j" id="L93-CB-LkC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="l6l-A1-B8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="11" id="GlC-7A-a0a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l6l-A1-B8O" secondAttribute="bottom" id="J5c-9d-B9S"/>
+                            <constraint firstItem="l6l-A1-B8O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="OkP-Co-ODV"/>
+                            <constraint firstAttribute="trailing" secondItem="l6l-A1-B8O" secondAttribute="trailing" constant="10" id="nmF-E7-llS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="couponsTable" destination="l6l-A1-B8O" id="rvZ-7x-ib4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="330"/>
+        </scene>
+    </scenes>
+</document>
